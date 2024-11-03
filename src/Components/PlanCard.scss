@@ -6,7 +6,7 @@
     align-items: center;
     text-align: center;
     border: 1px solid grey;
-    margin: 1em;
+    margin: 2em;
 
     .PlanCard-body {
         width: 100%;
@@ -29,6 +29,10 @@
                 align-self: flex-end;
             }
         }
+    }
+
+    &.chosen {
+        transform: scale(1.2);
     }
 }
 
@@ -55,7 +59,6 @@
     
 }
 .red {
-    transform: scale(1.2);
 
     .PlanCard-body{
         background-color: rgba(255, 0, 0, 0.659);
@@ -77,3 +80,4 @@
         }
     }
 }
+

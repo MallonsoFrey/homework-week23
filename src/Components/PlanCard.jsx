@@ -2,9 +2,12 @@
 import "./PlanCard.scss";
 
 export default function PlanCard(props) {
-  const { price, speed, bg } = props;
+  const { price, speed, bg, activeSelect, index, handlePlan } = props;
   return (
-    <div className={`PlanCard ${bg}`}>
+    <div
+      className={`PlanCard ${bg} ${activeSelect ? "chosen" : ""}`}
+      onClick={() => handlePlan(index)}
+    >
       <div className="PlanCard-body">
         <h2 className="PlanCard-title">Безлимитный {price}</h2>
         <div className="PlanCard-info">
